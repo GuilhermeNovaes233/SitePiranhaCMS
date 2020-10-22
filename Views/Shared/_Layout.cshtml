@@ -48,29 +48,22 @@
                 <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li>
-                            <a class="active" href="#">Home</a>
-                        </li>
-                        <li><a href="#"> Sobre nós </a></li>
-                        <li><a href="#"> Serviços </a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Pages
+                            <a class="active">
+                                @Html.ActionLink("Home", "Index", "Home")
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Projects</a>
-                                <a class="dropdown-item" href="#">Elements</a>
-                            </div>
+                        </li>
+                        <li>
+                            @Html.ActionLink("Sobre Nós", "Index", "About")
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Blog
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Blog</a>
-                                <a class="dropdown-item" href="#">Blog Details</a>
-                            </div>
+                             @Html.ActionLink("Projetos", "Index", "Project")
                         </li>
-                        <li><a href="#"> Contato </a></li>
+                        <li class="dropdown">
+                            @Html.ActionLink("Blog", "Index", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Contato", "Index", "Contact")
+                        </li>
                     </ul>
                 </div>
             </div>
