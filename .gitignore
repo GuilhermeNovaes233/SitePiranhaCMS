@@ -1,0 +1,8 @@
+
+#.Net Core Project
+bin
+obj
+
+.vs
+
+node_modules
