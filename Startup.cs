@@ -9,6 +9,9 @@ using Piranha.AttributeBuilder;
 using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.Data.EF.SQLite;
 using Piranha.Manager.Editor;
+using SitePiranhaCMS.Services;
+using SitePiranhaCMS.Models;
+
 
 namespace SitePiranhaCMS
 {
@@ -43,17 +46,11 @@ namespace SitePiranhaCMS
                     db.UseSqlite(_config.GetConnectionString("piranha")));
                 options.UseIdentityWithSeed<IdentitySQLiteDb>(db =>
                     db.UseSqlite(_config.GetConnectionString("piranha")));
-
-                /***
-                 * Here you can configure the different permissions
-                 * that you want to use for securing content in the
-                 * application.
-                options.UseSecurity(o =>
-                {
-                    o.UsePermission("WebUser", "Web User");
-                });
-                 */
             });
+
+            services.Configure<EmailSettings>(_config.GetSection("EmailSettings"));
+            services.AddTransient<IEmailSender, EmailSender>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
