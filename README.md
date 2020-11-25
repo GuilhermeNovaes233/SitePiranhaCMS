@@ -23,27 +23,19 @@ Basta clonar o repositório e abrir no seu ambiente de desenvolvimento Asp net.
     
 ## Configurar Serviço de Email
 
-Na tela de contatos existe um formulário onde é possível entrar em contato com o administrador do site. Para funcionar, basta adicionar as informações referentes ao seu emai no arquivo "appsettings.json"
+Na tela de contatos existe um formulário onde é possível entrar em contato com o administrador do site. Para funcionar, basta adicionar as informações referentes ao seu gmail no arquivo "appsettings.json"
 
     ```
     
     "EmailSettings": {
-    
       "FromName": "SeuNome",
-      
       "FromAddress": "SeuEmail",
-      
       "ServerAddress": "smtp.gmail.com",
-      
       "ServerPort": 587,
-      
       "ServerUseSsl": true,
-      
       "Username": "SeuEmail",
-      
       "Password": "SuaSenha"
      }
-    
     ```
     
 
