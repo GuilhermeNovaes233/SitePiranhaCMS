@@ -14,7 +14,7 @@ https://piranhacms.org/
 
 ## Curiosidade: Como criar um projeto utilizando Piranha CMS
 
-O Piranha CMS é totalmente baseado em pacotes e está disponível no NuGet. A maneira mais fácil de começar é instalar nosso pacote de modelo do NuGet, que contém todos os modelos de projeto disponíveis .
+O Piranha CMS é totalmente baseado em pacotes e está disponível no NuGet. A maneira mais fácil de começar é instalar o pacote de modelo do NuGet, que contém todos os modelos de projeto disponíveis .
 
 Instale os modelos
   ```
