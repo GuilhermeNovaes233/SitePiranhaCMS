@@ -15,10 +15,9 @@ Basta clonar o repositório e abrir no seu ambiente de desenvolvimento Asp net.
     https://localhost:44335/manager/
   ```
   
-  e digitar o login e senha
+  e digitar 
     ```
        login: admin
-       <br>
        senha: password
     ```
   
