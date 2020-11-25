@@ -6,6 +6,22 @@ Projeto Asp net MVC utilizando o gerenciador de conteúdo Piranha CMS
 
 Basta clonar o repositório e abrir no seu ambiente de desenvolvimento Asp net.
 
+## Estrutura do Projeto
+
+  Para acessar o portal administrativo basta digital '/manager' no final da url do localhost 
+  
+  Exemplo: 
+  ```
+    https://localhost:44335/manager/
+  ```
+  
+  e digitar o login e senha
+    ```
+       login: admin
+       senha: password
+    ```
+  
+
 ## Piranha CMS
 
 CMS representa Content Management System, ou Sistema de Gestão de Conteúdos. De forma bem direta, o piranha é um CMS permite que você crie, organize, publique e apague conteúdos do seu site. 
