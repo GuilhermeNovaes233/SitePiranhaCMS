@@ -61,6 +61,15 @@ namespace SitePiranhaCMS
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapPiranhaManager();
+            });
+
             // Initialize Piranha
             App.Init(api);
 
