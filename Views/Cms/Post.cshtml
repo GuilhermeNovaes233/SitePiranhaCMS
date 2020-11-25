@@ -7,12 +7,15 @@
 @section head {
     @WebApp.MetaTags(Model)
 }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:wght@700&display=swap">
+    <link rel="stylesheet" href="~/assets/css/style.min.css" asp-append-version="true">
 
 <header @(hasImage ? "class=has-image" : "") @(hasImage ? $"style=background-image:url({ @Url.Content(WebApp.Media.ResizeImage(Model.PrimaryImage, 1920, 400)) })" : "")>
-    <div class="dimmer"></div>
+    <div style="background: #000; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .45"></div>
     <div class="container text-center">
         <h1>@Model.Title</h1>
-        <p class="post-meta">
+        <p style="font-size: .875rem">
             <span>
                 In <a href="@archive.Permalink/category/@Model.Category.Slug">@Model.Category.Title</a>
             </span>

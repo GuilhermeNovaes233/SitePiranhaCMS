@@ -73,22 +73,6 @@ namespace SitePiranhaCMS
             // Configure Tiny MCE
             EditorConfig.FromFile("editorconfig.json");
 
-            // Adicionando css 
-            //App.Modules.Manager()
-            //    .Styles.Add("~/assets/css/linearicons.css");
-            //App.Modules.Manager()
-            //    .Styles.Add("~/assets/css/bootstrap.cs");
-            //App.Modules.Manager()
-            //    .Styles.Add("~/assets/css/owl.carousel.css");
-            //App.Modules.Manager()
-            //   .Styles.Add("~/assets/css/font-awesome.min.cs");
-            //App.Modules.Manager()
-            //    .Styles.Add("~/assets/css/magnific-popup.css");
-            //App.Modules.Manager()
-            //    .Styles.Add("~/assets/css/nice-select.css");
-            //App.Modules.Manager()
-            //    .Styles.Add("~/assets/css/main.css");
-
             // Middleware setup
             app.UsePiranha(options => {
                 options.UseManager();
